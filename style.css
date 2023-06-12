@@ -1,7 +1,7 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
 #heading {
@@ -39,17 +39,15 @@ section {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #1a2537;
-    padding: 2%;
-    color: aliceblue;
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #1a2537;
+  padding: 2%;
+  color: aliceblue;
 }
-
-
 
 /* burger menu 1  */
 .MENU-1 {
@@ -193,4 +191,50 @@ footer{
   top: 28px;
   left: 0px;
   background: #1a2537;
+}
+
+/* menu3 button */
+.Button-1 {
+  padding: 5%;
+  background-color: whitesmoke;
+}
+.Button-1 button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+.Button-1 button span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.Button-1 button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.Button-1 button:hover {
+  color: #fff;
+}
+
+.Button-1 button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
