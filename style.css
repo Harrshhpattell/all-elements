@@ -37,7 +37,10 @@ section {
   display: flex;
   padding-top: 4%;
   flex-direction: row;
+  width: 100%;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 footer {
   position: fixed;
@@ -195,7 +198,9 @@ footer {
 
 /* menu3 button */
 .Button-1 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: whitesmoke;
 }
 .Button-1 button {
@@ -241,7 +246,9 @@ footer {
 
 /* button2 */
 .Button-2 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: rgb(193, 187, 187);
 }
 .button2 {
@@ -306,7 +313,9 @@ footer {
 
 /* button3 */
 .Button-3 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: rgb(0, 0, 0);
 }
 
@@ -342,7 +351,9 @@ footer {
 
 /* button4 */
 .Button-4 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #eae7e7;
 }
 
@@ -385,7 +396,9 @@ footer {
 
 /* button5 */
 .Button-5 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #eae7e7;
 }
 
@@ -436,7 +449,9 @@ footer {
 
 /* button6 */
 .Button-6 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #d0cccc;
 }
 
@@ -495,7 +510,9 @@ footer {
 
 /* button7 */
 .Button-7 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #e4e0e0;
 }
 
@@ -590,7 +607,9 @@ button .blob:nth-child(5) {
 
 /* button8 */
 .Button-8 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #e8e8e8;
 }
 
@@ -615,7 +634,9 @@ button .blob:nth-child(5) {
 
 /* button9 */
 .Button-9 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #d5d4d4;
 }
 
@@ -669,7 +690,9 @@ button .blob:nth-child(5) {
 
 /* button10 */
 .Button-10 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #b5b4b4;
 }
 .Button-10 button {
@@ -728,7 +751,9 @@ button .blob:nth-child(5) {
 
 /* button11 */
 .Button-11 {
-  padding: 5%;
+  padding: 80px;
+  width: 400px;
+  text-align: center;
   background-color: #c8c8c8;
 }
 
@@ -786,4 +811,62 @@ button .blob:nth-child(5) {
 
 .Button-11 .button:active {
   filter: brightness(0.8);
+}
+
+/* button12 */
+.Button-12 {
+  padding: 80px;
+  width: 400px;
+  text-align: center;
+  background-color: #dddada;
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
